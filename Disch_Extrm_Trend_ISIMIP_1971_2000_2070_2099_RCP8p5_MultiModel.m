@@ -1,12 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%   Discharge Percentile Trend  %%%
 %%%         ISI-MIP - data        %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Behzad Asadieh   , Ph.D. Candidate                  %%%
-%%% Civil Engineering Department - Water Resources      %%%
-%%% The City College of The City University of New York %%%
-%%% basadie00@citymail.cuny.edu                         %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Behzad Asadieh, Ph.D.           %%%
+%%% University of Pennsylvania      %%%
+%%% basadieh@sas.upenn.edu          %%%
+%%% github.com/behzadasd            %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 tic;
 clear;
 clc;
@@ -326,7 +326,7 @@ for ghm_i=1:5
 % %     func_shadedErrorBar(Lat',Variable,{@mean,@std},{'g','LineWidth',4});
 % %     title({'Latitudinal average of normalized change in median of discharge' ; ['ISI-MIP - GHM: ' Impact_Models_Name ' , GCM: multiple - [2070-2099 RCP8.5] compared to [1971-2000]']})
 % %     legend('GCM Average +/- St.Dev.', 'location', 'NorthWest');
-% %     xlabel('Latitude ºN'); ylabel('Average of normalized change in discharge');
+% %     xlabel('Latitude ÂºN'); ylabel('Average of normalized change in discharge');
 % %     set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 % %     set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 % %     set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -347,7 +347,7 @@ for ghm_i=1:5
 % %     func_shadedErrorBar(Lat',Variable,{@mean,@std},{'b','LineWidth',4});
 % %     title({'Latitudinal average of normalized change in 5th percentile of Discharge' ; ['ISI-MIP - GHM: ' Impact_Models_Name ' , GCM: multiple - [2070-2099 RCP8.5] compared to [1971-2000]']})
 % %     legend('GCM Average +/- St.Dev.', 'location', 'NorthWest');
-% %     xlabel('Latitude ºN'); ylabel('Average of normalized change in discharge');
+% %     xlabel('Latitude ÂºN'); ylabel('Average of normalized change in discharge');
 % %     set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 % %     set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 % %     set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -367,7 +367,7 @@ for ghm_i=1:5
 % %     func_shadedErrorBar(Lat',Variable,{@mean,@std},{'r','LineWidth',4});
 % %     title({'Latitudinal average of normalized change in 95th percentile of discharge' ; ['ISI-MIP - GHM: ' Impact_Models_Name ' , GCM: multiple - [2070-2099 RCP8.5] compared to [1971-2000]']})
 % %     legend('GCM Average +/- St.Dev.', 'location', 'NorthWest');
-% %     xlabel('Latitude ºN'); ylabel('Average of normalized change in discharge');
+% %     xlabel('Latitude ÂºN'); ylabel('Average of normalized change in discharge');
 % %     set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 % %     set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 % %     set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -389,7 +389,7 @@ for ghm_i=1:5
 % %     func_shadedErrorBar(Lat',Variable2,{@mean,@std},{'r','LineWidth',4},1);
 % %     title({'Latitudinal average of normalized change in 5th and 95th percentile of discharge' ; ['ISI-MIP - GHM: ' Impact_Models_Name ' , GCM: multiple - [2070-2099 RCP8.5] compared to [1971-2000]']})
 % %     legend('GCM Average P05 +/- St.Dev.', 'GCM Average P95 +/- St.Dev.', 'location', 'NorthWest');
-% %     xlabel('Latitude ºN'); ylabel('Average of normalized change in discharge');
+% %     xlabel('Latitude ÂºN'); ylabel('Average of normalized change in discharge');
 % %     set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 % %     set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 % %     set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -682,7 +682,7 @@ plot(Lat', Variable1,'LineWidth',4,'Color','red');
 plot(Lat', Variable2,'LineWidth',4,'Color','blue');
 title({['Latitudinal average number of models (out of ' num2str(n_mods) ') agreeing on the significance of change'] ; ('ISI-MIP - Change in 5th and 95th percentile of discharge - [2070-2099 RCP8.5] vs. [1971-2000]')})
 legend('P05 - ave. no. of models agreeing', 'P95 - ave. no. of models agreeing', 'location', 'SouthEast');
-xlabel('Latitude ºN'); ylabel(['Number of models (out of ' num2str(n_mods) ')']);
+xlabel('Latitude ÂºN'); ylabel(['Number of models (out of ' num2str(n_mods) ')']);
 set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -766,7 +766,7 @@ plot(Lat', Variable1,'LineWidth',4,'Color','red');
 plot(Lat', Variable2,'LineWidth',4,'Color','blue');
 title({['Latitudinal average number of models (out of ' num2str(n_mods) ') agreeing on the direction of change'] ; ('ISI-MIP - Change in 5th and 95th percentile of discharge - [2070-2099 RCP8.5] vs. [1971-2000]')})
 legend('P05 - ave. no. of models agreeing', 'P95 - ave. no. of models agreeing', 'location', 'SouthEast');
-xlabel('Latitude ºN'); ylabel(['Number of models (out of ' num2str(n_mods) ')']);
+xlabel('Latitude ÂºN'); ylabel(['Number of models (out of ' num2str(n_mods) ')']);
 set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -830,7 +830,7 @@ close
 % %     func_shadedErrorBar(Lat',Variable,{@mean,@std},{'g','LineWidth',4});
 % %     title({'Latitudinal average of normalized change in median of discharge' ; ['ISI-MIP - GHM: multiple (Average +/- St.Dev.) , GCM: ' Model_Name ' - [2070-2099 RCP8.5] vs. [1971-2000]']})
 % %     legend('GHM Average +/- St.Dev.','GHM Average', 'location', 'NorthWest');
-% %     xlabel('Latitude ºN'); ylabel('Average of normalized change in discharge');
+% %     xlabel('Latitude ÂºN'); ylabel('Average of normalized change in discharge');
 % %     set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 % %     set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 % %     set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -861,7 +861,7 @@ for ghm_i=1:size(Impact_Models_Names,2)
 end
 title({'Latitudinal average of normalized change in median of discharge' ; ('ISI-MIP - GHM: single , GCM: multiple (Average +/- St.Dev.) - [2070-2099 RCP8.5] vs. [1971-2000]')})
 legend([Impact_Models_Names{1}], [Impact_Models_Names{2}], [Impact_Models_Names{3}], [Impact_Models_Names{4}], [Impact_Models_Names{5}], 'location', 'NorthWest');
-xlabel('Latitude ºN'); ylabel('Average of normalized change in discharge');
+xlabel('Latitude ÂºN'); ylabel('Average of normalized change in discharge');
 set(gca,'FontSize',30, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -884,7 +884,7 @@ for ghm_i=1:size(Impact_Models_Names,2)
 end
 title({'Latitudinal average of normalized change in drought risk (-1 * 5th percentile of discharge)' ; ('ISI-MIP - GHM: single , GCM: multiple (Average +/- St.Dev.) - [2070-2099 RCP8.5] vs. [1971-2000]')})
 legend([Impact_Models_Names{1}], [Impact_Models_Names{2}], [Impact_Models_Names{3}], [Impact_Models_Names{4}], [Impact_Models_Names{5}], 'location', 'SouthWest');
-xlabel('Latitude ºN'); ylabel('Average of normalized change in drought');
+xlabel('Latitude ÂºN'); ylabel('Average of normalized change in drought');
 set(gca,'FontSize',30, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -907,7 +907,7 @@ for ghm_i=1:size(Impact_Models_Names,2)
 end
 title({'Latitudinal average of normalized change in flood risk (95th percentile of discharge)' ; ('ISI-MIP - GHM: single , GCM: multiple (Average +/- St.Dev.) - [2070-2099 RCP8.5] vs. [1971-2000]')})
 legend([Impact_Models_Names{1}], [Impact_Models_Names{2}], [Impact_Models_Names{3}], [Impact_Models_Names{4}], [Impact_Models_Names{5}], 'location', 'NorthWest');
-xlabel('Latitude ºN'); ylabel('Average of normalized change in flood');
+xlabel('Latitude ÂºN'); ylabel('Average of normalized change in flood');
 set(gca,'FontSize',30, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -936,7 +936,7 @@ for gcm_i=1:size(GCM_Models_Names,2)
 end
 title({'Latitudinal average of normalized change in median of discharge' ; ('ISI-MIP - GHM: multiple (Average +/- St.Dev.) , GCM: single - [2070-2099 RCP8.5] vs. [1971-2000]')})
 legend([GCM_Models_Names{1}], [GCM_Models_Names{2}], [GCM_Models_Names{3}], [GCM_Models_Names{4}], [GCM_Models_Names{5}], 'location', 'NorthWest');
-xlabel('Latitude ºN'); ylabel('Average of normalized change in discharge');
+xlabel('Latitude ÂºN'); ylabel('Average of normalized change in discharge');
 set(gca,'FontSize',30, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -959,7 +959,7 @@ for gcm_i=1:size(GCM_Models_Names,2)
 end
 title({'Latitudinal average of normalized change in drought risk (-1 * 5th percentile of discharge)' ; ('ISI-MIP - GHM: multiple (Average +/- St.Dev.) , GCM: single - [2070-2099 RCP8.5] vs. [1971-2000]')})
 legend([GCM_Models_Names{1}], [GCM_Models_Names{2}], [GCM_Models_Names{3}], [GCM_Models_Names{4}], [GCM_Models_Names{5}], 'location', 'SouthWest');
-xlabel('Latitude ºN'); ylabel('Average of normalized change in drought');
+xlabel('Latitude ÂºN'); ylabel('Average of normalized change in drought');
 set(gca,'FontSize',30, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -982,7 +982,7 @@ for gcm_i=1:size(GCM_Models_Names,2)
 end
 title({'Latitudinal average of normalized change in flood risk (95th percentile of discharge)' ; ('ISI-MIP - GHM: multiple (Average +/- St.Dev.) , GCM: single - [2070-2099 RCP8.5] vs. [1971-2000]')})
 legend([GCM_Models_Names{1}], [GCM_Models_Names{2}], [GCM_Models_Names{3}], [GCM_Models_Names{4}], [GCM_Models_Names{5}], 'location', 'NorthWest');
-xlabel('Latitude ºN'); ylabel('Average of normalized change in flood');
+xlabel('Latitude ÂºN'); ylabel('Average of normalized change in flood');
 set(gca,'FontSize',30, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -1012,7 +1012,7 @@ func_shadedErrorBar(Lat',Variable1,{@mean,@std},{'r','LineWidth',4},1);
 func_shadedErrorBar(Lat',Variable2,{@mean,@std},{'b','LineWidth',4},1);
 title({'Latitudinal average of normalized change in drought and flood risk (5th (* -1) and 95th percentile of discharge)' ; ('ISI-MIP - multimodel average of all GHMs and GCMs - [2070-2099 RCP8.5] compared to [1971-2000]')})
 legend('Drought risk (-1* P05) multimodel (average +/- st.dev.)', 'Flood risk (P95)           multimodel (average +/- st.dev.)', 'location', 'NorthWest');
-xlabel('Latitude ºN'); ylabel('Average of normalized change in drought and flood');
+xlabel('Latitude ÂºN'); ylabel('Average of normalized change in drought and flood');
 set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -1033,7 +1033,7 @@ hold on
 func_shadedErrorBar(Lat',Variable1,{@mean,@std},{'r','LineWidth',4},1);
 title({'Latitudinal average of normalized change in drought risk (-1 * 5th percentile of discharge)' ; ('ISI-MIP - multimodel average of all GHMs and GCMs - [2070-2099 RCP8.5] compared to [1971-2000]')})
 legend('Drought risk (-1* P05) multimodel (average +/- st.dev.)', 'location', 'NorthWest');
-xlabel('Latitude ºN'); ylabel('Average of normalized change in drought');
+xlabel('Latitude ÂºN'); ylabel('Average of normalized change in drought');
 set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -1054,7 +1054,7 @@ hold on
 func_shadedErrorBar(Lat',Variable1,{@mean,@std},{'b','LineWidth',4},1);
 title({'Latitudinal average of normalized change in flood risk (95th percentile of discharge)' ; ('ISI-MIP - multimodel average of all GHMs and GCMs - [2070-2099 RCP8.5] compared to [1971-2000]')})
 legend('Flood risk (P95) multimodel (average +/- st.dev.)', 'location', 'NorthWest');
-xlabel('Latitude ºN'); ylabel('Average of normalized change in flood');
+xlabel('Latitude ÂºN'); ylabel('Average of normalized change in flood');
 set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -1075,7 +1075,7 @@ hold on
 func_shadedErrorBar(Lat',Variable1,{@mean,@std},{'g','LineWidth',4},1);
 title({'Latitudinal average of normalized change in median percentile of discharge' ; ('ISI-MIP - multimodel average of all GHMs and GCMs - [2070-2099 RCP8.5] compared to [1971-2000]')})
 legend('P_m_e_d_i_a_n multimodel (average +/- st.dev.)', 'location', 'NorthWest');
-xlabel('Latitude ºN'); ylabel('Average of normalized change in discharge');
+xlabel('Latitude ÂºN'); ylabel('Average of normalized change in discharge');
 set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
@@ -1097,7 +1097,7 @@ plot(Lat', Variable1,'LineWidth',4,'Color','red');
 plot(Lat', Variable2,'LineWidth',4,'Color','blue');
 title({'Latitudinal average of normalized change in drought and flood risk (5th (* -1) and 95th percentile of discharge)' ; ('ISI-MIP - Change in multimodel-averaged discharge (all GHMs and GCMs) - [2070-2099 RCP8.5] vs. [1971-2000]')})
 legend('Drought risk (-1* P05) multimodel (average +/- st.dev.)', 'Flood risk (P95)           multimodel (average +/- st.dev.)', 'location', 'NorthWest');
-xlabel('Latitude ºN'); ylabel('Average of normalized change in drought and flood');
+xlabel('Latitude ÂºN'); ylabel('Average of normalized change in drought and flood');
 set(gca,'FontSize',36, 'FontName', 'MS Sens Serif') % Axis Numbers and ranges Font
 set(findall(gcf,'type','text'),'FontSize',24, 'FontName', 'MS Sens Serif') % Text (title and axis-lable) font
 set(gcf,'units','normalized','outerposition',[0 0 1 1]) % Maximize the figure window
