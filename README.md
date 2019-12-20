@@ -5,7 +5,7 @@ Publication reference: https://www.hydrol-earth-syst-sci.net/21/5863/2017/hess-2
 
 Main code: Disch_Extrm_Trend_ISIMIP_1971_2000_2070_2099_RCP8p5_MultiModel.m
 
-** Historical, RCP2.6, and RCP8.2 Discharge netcdf files from 25 models from the ISI-MIP project are first analyzed and high and low percentiles of flow are extracted and saved as .mat files in the "Matlab Manipulated Data" directory. The codes process files stored there.
+** Historical, RCP2.6, and RCP8.2 netcdf files of daily discharge/streamflow from 25 models from the ISI-MIP project are first analyzed and high and low percentiles of flow are extracted and saved as .mat files in the "Matlab Manipulated Data" directory. The codes process files stored there.
 ** .mat files of discharge are not uploaded due to Github's file upload limitations.
 
 
