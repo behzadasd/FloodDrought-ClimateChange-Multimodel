@@ -29,8 +29,8 @@ Calculation of normalized change in streamflow in 21C compared to 20C is perform
 
 The two-sample t-test is used in this study to quantify the statistical significance level of difference between the means of the 20C and 21C streamflow time series (refer to supplementary materials). The percentage of land area with statistically significant change (at 95% confidence level) is reported. The affected population is calculated using the Gridded Population of the World (GPW) data from the Center for International Earth Science Information Network (CIESIN).
 
-
-
-
+![Alt text](https://raw.githubusercontent.com/behzadasd/FloodDrought-ClimateChange-Multimodel/master/Main_Figure.png)
+![Alt text](https://raw.githubusercontent.com/behzadasd/FloodDrought-ClimateChange-Multimodel/master/Figures%20-%20Multimodel%20-%20RCP8.5/Lat_Disch_Change_P05_ISIMIP_GHMsingle_GCMaveraged_rcp8p5_hist.png)
+![Alt text](https://raw.githubusercontent.com/behzadasd/FloodDrought-ClimateChange-Multimodel/master/Figures%20-%20Multimodel%20-%20RCP8.5/Map_norm_Disch_Change_P95_Disch_ISIMIP_AllModels_Suppl_rcp8p5_hist.png)
 
 
