@@ -36,6 +36,6 @@ Main Figure: Global map of combined change in high and low extremes (related to 
 ----------------------------------------------------------------------------------------------------------------------------------------
 ![Alt text](https://raw.githubusercontent.com/behzadasd/FloodDrought-ClimateChange-Multimodel/master/Figures%20-%20Multimodel%20-%20RCP8.5/Lat_Disch_Change_P05_ISIMIP_GHMsingle_GCMaveraged_rcp8p5_hist.png)
 ----------------------------------------------------------------------------------------------------------------------------------------
-![Alt text](https://raw.githubusercontent.com/behzadasd/FloodDrought-ClimateChange-Multimodel/master/Figures%20-%20Multimodel%20-%20RCP8.5/Figure S2.png)
+![Alt text](https://raw.githubusercontent.com/behzadasd/FloodDrought-ClimateChange-Multimodel/master/Figures%20-%20Multimodel%20-%20RCP8.5/Figure_S2.png)
 
 
