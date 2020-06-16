@@ -11,7 +11,9 @@ Main code: Disch_Extrm_Trend_ISIMIP_1971_2000_2070_2099_RCP8p5_MultiModel.m
 ----------------------------------------------------------------------------------------------------------------------------------------
 ![Alt text](https://raw.githubusercontent.com/behzadasd/FloodDrought-ClimateChange-Multimodel/master/Main_Figure.png)
 
+
 Main Figure: Global map of combined change in high and low extremes (related to change in flood and drought chance) under the (a) RCP8.5 and (b) RCP2.6 scenarios. The maps show the ensemble mean results of all 25 GCM-GHM combination datasets. Grid cells with an increase in both flood and drought chances (Quad. 1) are shown in purple shades, cells with increased flood chance (Quad. 2) and drought chance (Quad. 3) are shown in blue and red shades, respectively, and cells with a decrease in both flood and drought chances (Quad. 4) are shown in yellow shades. The saturation of colors is chosen based on the magnitude of normalized change in high and low extremes of streamflow, as shown in the legend. Distributions of cells in each of the quadrants are comparable to Fig. 2c and d. Grid cells with normalized changes less than 1 % (equal to 2 % in relative terms) in each quadrant are considered as no-change cells and are shown in gray.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 # Abstract: 
